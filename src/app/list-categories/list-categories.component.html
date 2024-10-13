@@ -1,0 +1,19 @@
+
+<!--interpolation-->{{message}}
+<!---event-Binding<button(click)="f(' **test ')"></button>--->
+<!---valueproperty-binding---><input [value]="message">
+
+
+
+<div class="container">
+    <div class="row">
+    <div *ngFor="let category of categories "class="col-md-4"style="margin-bottom :20px">
+    <img [src]="category.image" [alt]="category.title"
+    class="img-fluid h-50 w-75">
+    <h3>{{category.title | uppercase}}</h3>
+    <button class="btn btn-primary">Voir produits</button>
+    </div>
+   </div>
+</div>
+        
+        
